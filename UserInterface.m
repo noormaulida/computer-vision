@@ -302,7 +302,7 @@ function btnTraining_Callback(hObject, eventdata, handles)
     set(handles.text36, 'Visible', 'on');    
     fprintf('-------------------------\n');
     
-    tstart = tic
+    %tstart = tic
        
     for ii=1:nfiles
         if(ii == nfiles*0.25)
@@ -500,9 +500,9 @@ function btnTraining_Callback(hObject, eventdata, handles)
     end
     
     
-    tend = toc(tstart)
+    %tend = toc(tstart)
     
-    times = ['Completed in ' num2str(tend) ' seconds '];
+    times = ['Training data completed'];
     set(handles.text38, 'String', times);   
     
     set(handles.text75, 'Visible', 'off');    
